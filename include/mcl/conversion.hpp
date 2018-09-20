@@ -8,6 +8,10 @@
 	@license modified new BSD license
 	http://opensource.org/licenses/BSD-3-Clause
 */
+#ifdef _MSC_VER
+	#pragma warning(push)
+	#pragma warning(disable : 4127)
+#endif
 
 namespace mcl { namespace fp {
 
@@ -439,3 +443,7 @@ size_t strToArray(bool *pIsMinus, UT *x, size_t xN, const char *buf, size_t bufS
 }
 
 } } // mcl::fp
+
+#ifdef _MSC_VER
+	#pragma warning(pop)
+#endif
